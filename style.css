@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    margin-top: 32px;
+    display: flex;
+    justify-content: start;
+}
+
+/* LADO ESQUERDO DA PÁGINA (Imagem do smartphone com o Instagram aberto) */
+.phone-preview{
+    width: 50%;
+}
+.phone-preview img{
+    width: 100%;
+}
+
+/* LADO DIREITO DA PÁGINA (Login e Logout)*/
+.join-in{
+    width: 40%;
+    margin-top: 32px;
+}
+
+.group{
+    background-color: #FFFFFF;
+    border: 1px solid #dadada;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.instagram-logo{
+    max-width: 50%;
+    margin: 20px auto;
+}
+
+.profile-photo{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.login {
+    color: #FFFFFF;
+    background-color: #0095f6;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 1rem;
+}
+.logout{
+    color: #0095f6;
+    margin-bottom: 1rem;
+}
+
+.group:nth-child(2) {
+    padding: 10px 0;
+    color: #A0A0A0;
+}
+.group:nth-child(2) a {
+    color: #0095f6;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.download img{
+    width: 136px;
+    height: 40px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    article {
+        width: 90%;
+    }
+
+    .phone-preview {
+        display: none;
+    }
+
+    .join-in {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+}
