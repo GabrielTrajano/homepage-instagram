@@ -13,26 +13,29 @@ body{
     background-color: #FAFAFA;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 article{
     margin-top: 32px;
     display: flex;
     justify-content: start;
+    align-items: center;
 }
 
 /* LADO ESQUERDO DA PÁGINA (Imagem do smartphone com o Instagram aberto) */
-.phone-preview{
+.instagram-preview{
     width: 50%;
+    margin-right: 40px;
 }
-.phone-preview img{
+.instagram-preview img{
     width: 100%;
 }
 
 /* LADO DIREITO DA PÁGINA (Login e Logout)*/
-.join-in{
+.instagram-continue{
     width: 40%;
-    margin-top: 32px;
+    align-items: center;
 }
 
 .group{
@@ -112,12 +115,16 @@ article{
         width: 90%;
     }
 
-    .phone-preview {
+    .instagram-preview {
         display: none;
     }
 
-    .join-in {
+    .instagram-continue {
         width: 100%;
+    }
+
+    .download{
+        width: auto;
     }
     
     .group {
